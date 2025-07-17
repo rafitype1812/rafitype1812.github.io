@@ -3,28 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Produk Aluminium | Barakah Aluminium</title>
-  <link rel="stylesheet" href="toko2.css" />
-  <style>
-    .logo a {
-      text-decoration: none;
-      color: inherit;
-      font-weight: bold;
-      transition: transform 0.3s ease, color 0.3s ease;
-    }
-    .logo a:hover {
-      transform: scale(1.1);
-      color: orange;
-    }
-  </style>
+  <title>Produk Aluminium | Barokah Aluminium</title>
+  <link rel="stylesheet" href="produk.css" />
 </head>
 <body>
   <header>
-    <div class="logo"><a href="toko2.html">🔩 Barakah Aluminium</a></div>
+    <div class="logo">
+      <img src="logo ba.png" alt="Logo Barakah" style="height: 40px;">
+      <a href="toko2.html"> Barakah Aluminium</a>
+    </div>
     <nav>
       <a href="toko2.html">Beranda</a>
-      <a href="alumunium.html">Produk</a>
-      <a href="#kontak">Kontak</a>
+      <a href="halproduk.html">Produk</a>
+      <a href="tentang.html">Tentang Kami</a>
+      <a href="kontak.html">Kontak</a>
+      <a href="keranjang.html" class="keranjang-link">
+        🛒 <span id="jumlah-keranjang">0</span>
+      </a>
     </nav>
   </header>
 
@@ -32,95 +27,130 @@
     <h1>Katalog Produk Aluminium</h1>
     <div class="produk-grid">
       <div class="card">
-        <img src="alumunium1.png" alt="Aluminium Lembaran">
+        <img src="alumunium lembaran.webp" alt="Aluminium Lembaran">
         <h3>Aluminium Lembaran 2mm</h3>
         <p>Ukuran 120x240 cm</p>
         <p class="harga">Rp 750.000</p>
-        <a href="#pesan" class="btn btn-orange">Pesan</a>
+        <a href="https://wa.me/6283107819553" target="_blank" class="btn btn-orange">Pesan</a>
+        <button class="btn-keranjang" onclick="tambahKeKeranjang('Aluminium Lembaran 2mm', 750000)">🛒 Simpan ke Keranjang</button>
       </div>
       <div class="card">
-        <img src="alumunium2.png" alt="Aluminium Lembaran Tebal">
+        <img src="alumunium lembaran.webp" alt="Aluminium Lembaran Tebal">
         <h3>Aluminium 5mm</h3>
         <p>Ukuran 10x400 cm</p>
         <p class="harga">Rp 1.500.000</p>
-        <a href="#pesan" class="btn btn-orange">Pesan</a>
+        <a href="https://wa.me/6283107819553" target="_blank" class="btn btn-orange">Pesan</a>
+        <button class="btn-keranjang" onclick="tambahKeKeranjang('Aluminium 5mm', 1500000)">🛒 Simpan ke Keranjang</button>
       </div>
       <div class="card">
-        <img src="alumunium3.png" alt="Aluminium Batangan">
+        <img src="alumunium batangan.jpg" alt="Aluminium Batangan">
         <h3>Batangan Aluminium 10mm</h3>
         <p>Ukuran 10x400 cm</p>
         <p class="harga">Rp 3.000.000</p>
-        <a href="#pesan" class="btn btn-orange">Pesan</a>
+        <a href="https://wa.me/6283107819553" target="_blank" class="btn btn-orange">Pesan</a>
+        <button class="btn-keranjang" onclick="tambahKeKeranjang('Batangan Aluminium 10mm', 3000000)">🛒 Simpan ke Keranjang</button>
       </div>
       <div class="card">
-        <img src="alumunium4.png" alt="Profil Aluminium">
+        <img src="alumunium U.webp" alt="Profil Aluminium">
         <h3>Profil Aluminium U-Channel</h3>
         <p>Ukuran 5x100 cm</p>
         <p class="harga">Rp 580.000</p>
-        <a href="#pesan" class="btn btn-orange">Pesan</a>
+        <a href="https://wa.me/6283107819553" target="_blank" class="btn btn-orange">Pesan</a>
+        <button class="btn-keranjang" onclick="tambahKeKeranjang('Profil Aluminium U-Channel', 580000)">🛒 Simpan ke Keranjang</button>
       </div>
       <div class="card">
-        <img src="alumunium5.png" alt="Aluminium Finishing">
+        <img src="alumunium glow.webp" alt="Aluminium Finishing">
         <h3>Aluminium Finishing Glossy</h3>
         <p>Ukuran 120x240 cm</p>
         <p class="harga">Rp 890.000</p>
-        <a href="#pesan" class="btn btn-orange">Pesan</a>
+        <a href="https://wa.me/6283107819553" target="_blank" class="btn btn-orange">Pesan</a>
+        <button class="btn-keranjang" onclick="tambahKeKeranjang('Aluminium Finishing Glossy', 890000)">🛒 Simpan ke Keranjang</button>
       </div>
       <div class="card">
-        <img src="alumunium6.png" alt="Aluminium Siku">
+        <img src="alumunium siku.jpg" alt="Aluminium Siku">
         <h3>Aluminium Siku</h3>
         <p>Ukuran 3x300 cm</p>
         <p class="harga">Rp 670.000</p>
-        <a href="#pesan" class="btn btn-orange">Pesan</a>
+        <a href="https://wa.me/6283107819553" target="_blank" class="btn btn-orange">Pesan</a>
+        <button class="btn-keranjang" onclick="tambahKeKeranjang('Aluminium Siku', 670000)">🛒 Simpan ke Keranjang</button>
       </div>
       <div class="card">
-        <img src="alumunium7.png" alt="Aluminium Hollow">
+        <img src="hollow.jpg" alt="Aluminium Hollow">
         <h3>Aluminium Hollow Ringan</h3>
         <p>Ukuran 4x4x100 cm</p>
         <p class="harga">Rp 520.000</p>
-        <a href="#pesan" class="btn btn-orange">Pesan</a>
+        <a href="https://wa.me/6283107819553" target="_blank" class="btn btn-orange">Pesan</a>
+        <button class="btn-keranjang" onclick="tambahKeKeranjang('Aluminium Hollow Ringan', 520000)">🛒 Simpan ke Keranjang</button>
       </div>
       <div class="card">
-        <img src="alumunium8.png" alt="Aluminium Cat Putih">
+        <img src="cat alumunium.jpg" alt="Aluminium Cat Putih">
         <h3>Aluminium Cat Putih</h3>
         <p>Ukuran 120x240 cm</p>
         <p class="harga">Rp 820.000</p>
-        <a href="#pesan" class="btn btn-orange">Pesan</a>
+        <a href="https://wa.me/6283107819553" target="_blank" class="btn btn-orange">Pesan</a>
+        <button class="btn-keranjang" onclick="tambahKeKeranjang('Aluminium Cat Putih', 820000)">🛒 Simpan ke Keranjang</button>
       </div>
       <div class="card">
-        <img src="alumunium9.png" alt="Aluminium Railing">
+        <img src="alumuniu roling.webp" alt="Aluminium Railing">
         <h3>Aluminium Railing</h3>
         <p>Ukuran 3x300 cm</p>
         <p class="harga">Rp 910.000</p>
-        <a href="#pesan" class="btn btn-orange">Pesan</a>
+        <a href="https://wa.me/6283107819553" target="_blank" class="btn btn-orange">Pesan</a>
+        <button class="btn-keranjang" onclick="tambahKeKeranjang('Aluminium Railing', 910000)">🛒 Simpan ke Keranjang</button>
       </div>
       <div class="card">
-        <img src="alumunium10.png" alt="Aluminium Anodized">
+        <img src="alumuniumautoser.webp" alt="Aluminium Anodized">
         <h3>Aluminium Anodized</h3>
         <p>Ukuran 2x250 cm</p>
         <p class="harga">Rp 1.200.000</p>
-        <a href="#pesan" class="btn btn-orange">Pesan</a>
+        <a href="https://wa.me/6283107819553" target="_blank" class="btn btn-orange">Pesan</a>
+        <button class="btn-keranjang" onclick="tambahKeKeranjang('Aluminium Anodized', 1200000)">🛒 Simpan ke Keranjang</button>
       </div>
       <div class="card">
-        <img src="alumunium11.png" alt="Aluminium Transparan">
+        <img src="alumunium transparan.png" alt="Aluminium Transparan">
         <h3>Aluminium Transparan</h3>
         <p>Ukuran 120x240 cm</p>
         <p class="harga">Rp 980.000</p>
-        <a href="#pesan" class="btn btn-orange">Pesan</a>
+        <a href="https://wa.me/6283107819553" target="_blank" class="btn btn-orange">Pesan</a>
+        <button class="btn-keranjang" onclick="tambahKeKeranjang('Aluminium Transparan', 980000)">🛒 Simpan ke Keranjang</button>
       </div>
       <div class="card">
-        <img src="alumunium12.png" alt="Aluminium Panel">
+        <img src="alumuniumpanles.jpg" alt="Aluminium Panel">
         <h3>Aluminium Panel Eksterior</h3>
         <p>Ukuran 100x200 cm</p>
         <p class="harga">Rp 1.100.000</p>
-        <a href="#pesan" class="btn btn-orange">Pesan</a>
+        <a href="https://wa.me/6283107819553" target="_blank" class="btn btn-orange">Pesan</a>
+        <button class="btn-keranjang" onclick="tambahKeKeranjang('Aluminium Panel Eksterior', 1100000)">🛒 Simpan ke Keranjang</button>
       </div>
     </div>
   </main>
 
   <footer>
-    <p>&copy; 2025 Barakah Aluminium. Semua hak dilindungi.</p>
+    <p>&copy; © Copyright 2025 || Barakah Alumunium Sukorejo</p>
   </footer>
 
+  <script>
+    function tambahKeKeranjang(namaProduk, hargaProduk) {
+      let keranjang = JSON.parse(localStorage.getItem("keranjang")) || [];
+      const produkBaru = {
+        nama: namaProduk,
+        harga: hargaProduk
+      };
+      keranjang.push(produkBaru);
+      localStorage.setItem("keranjang", JSON.stringify(keranjang));
+      alert(namaProduk + " telah ditambahkan ke keranjang!");
+      updateJumlahKeranjangNav();
+    }
+
+    function updateJumlahKeranjangNav() {
+      const keranjang = JSON.parse(localStorage.getItem("keranjang")) || [];
+      const jumlahKeranjangSpan = document.getElementById("jumlah-keranjang");
+      if (jumlahKeranjangSpan) {
+        jumlahKeranjangSpan.textContent = keranjang.length;
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", updateJumlahKeranjangNav);
+  </script>
 </body>
 </html>
